@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px); /* Apply blur effect to the video */
+
+}
+#countdown {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300px;
+    color: white;
+    z-index: 2;
+    display: none;
+    background-color: black;
+}
+#stopped-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: white;
+    z-index: 2;
+    display: none;
+    text-align: center;
+    background-color: black;
+}
+.uberschrift {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+}
+.knopfe {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.knopfe button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+#momentmal-form {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+#momentmal-form input {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    #stopped-text {
+        font-size: 30px;
+    }
+    .uberschrift {
+        font-size: 24px;
+        top: 10px;
+        left: 10px;
+    }
+    .knopfe {
+        bottom: 10px;
+    }
+    #momentmal-form input {
+        width: calc(100% - 20px);
+    }
+}

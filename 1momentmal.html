@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGGICAM DIGGI</title>
+  <link href="1momentmal.css" rel="stylesheet">
+</head>
+<body>
+<video id="video" autoplay></video>
+<div id="countdown"></div>
+<div id="stopped-text">WEIL MAN DIE SCHÖNSTEN MOMENTE NICHT VERGESSEN DARF</div>
+<div id="momentmal-form">
+
+  <input type="text" id="email" placeholder="GIB MAL DEINE MAIL">
+  <input type="file" id="uploadInput" accept="image/*" multiple>
+
+  <button onclick="sendMoment()">SEND</button>
+</div>
+<div class="uberschrift"> DIGGER? <br> DIGGICAM DIGGI </div>
+<div class="knopfe">
+  <button class="schiess" onclick="takePicture()"> SCHIESS MAL </button>
+  <button class="speicher" onclick="speicherKnopf()" disabled> MOMENT MAL </button>
+</div>
+<script src="1momentmal.js">
+</script>
+</body>
+</html>
